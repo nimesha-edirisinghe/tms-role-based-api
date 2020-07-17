@@ -4,15 +4,15 @@ const UserSchema = new Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: [true, "Please add a name"],
     },
     email: {
       type: String,
-      required: true,
+      required: [true, "Please add a email"],
     },
     contact: {
       type: String,
-      required: true,
+      required: [true, "Please add a contact number"],
     },
     role: {
       type: String,
@@ -21,11 +21,11 @@ const UserSchema = new Schema(
     },
     username: {
       type: String,
-      required: true,
+      required: [true, "Please add username"],
     },
     password: {
       type: String,
-      required: true,
+      required: [true, "Please add password"],
     },
   },
   { timestamps: true }
