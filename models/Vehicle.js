@@ -8,7 +8,15 @@ const VehicleSchema = new Schema(
     },
     model: {
       type: String,
-      required: tru,
+      required: true,
+    },
+    ecapacity: {
+      type: String,
+      required: true,
+    },
+    owner: {
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }
