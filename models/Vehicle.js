@@ -12,6 +12,7 @@ const VehicleSchema = new Schema(
     },
     ecapacity: {
       type: String,
+      default: "800cc",
       required: [true, "Please add engine capacity"],
     },
     owner: {
