@@ -10,6 +10,14 @@ const DriverSchema = new Schema(
       type: String,
       required: [true, "Please add email"],
     },
+    contact: {
+      type: String,
+      required: [true, "Please add contact number"],
+    },
+    address: {
+      type: String,
+      required: [true, "Please add address"],
+    },
   },
   { timestamps: true }
 );
