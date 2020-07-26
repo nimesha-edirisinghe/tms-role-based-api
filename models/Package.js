@@ -6,6 +6,14 @@ const PackageSchema = new Schema(
       type: String,
       required: [true, "Please add name"],
     },
+    type: {
+      type: String,
+      required: [true, "Please add packaged type"],
+    },
+    amount: {
+      type: Number,
+      required: true,
+    },
   },
   { timestamps: true }
 );
