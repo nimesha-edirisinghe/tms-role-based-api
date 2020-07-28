@@ -14,6 +14,10 @@ const PackageSchema = new Schema(
       type: Number,
       required: true,
     },
+    description: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );
