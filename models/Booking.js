@@ -6,6 +6,10 @@ const BookingSchema = new Schema(
       type: String,
       required: [true, "Please add name"],
     },
+    type: {
+      type: String,
+      required: [true, "Please add booking type"],
+    },
   },
   { timestamps: true }
 );
