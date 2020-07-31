@@ -10,6 +10,10 @@ const DriverSchema = new Schema(
       type: String,
       required: [true, "Please add email"],
     },
+    bgroup: {
+      type: String,
+      required: [true, "Please add your blood group"],
+    },
     contact: {
       type: String,
       required: [true, "Please add contact number"],
