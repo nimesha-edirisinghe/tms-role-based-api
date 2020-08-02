@@ -10,6 +10,10 @@ const BookingSchema = new Schema(
       type: String,
       required: [true, "Please add booking type"],
     },
+    description: {
+      type: String,
+      required: [true],
+    },
   },
   { timestamps: true }
 );
