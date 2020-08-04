@@ -12,7 +12,7 @@ const BookingSchema = new Schema(
     },
     description: {
       type: String,
-      required: [true],
+      required: [true, "Please add description"],
     },
   },
   { timestamps: true }
