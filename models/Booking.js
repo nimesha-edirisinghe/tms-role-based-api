@@ -16,7 +16,7 @@ const BookingSchema = new Schema(
     },
     guests: {
       type: Number,
-      required: [true],
+      required: [true, "Please add no of guests"],
     },
   },
   { timestamps: true }
