@@ -18,6 +18,10 @@ const BookingSchema = new Schema(
       type: Number,
       required: [true, "Please add no of guests"],
     },
+    discount: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );
