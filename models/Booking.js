@@ -20,7 +20,7 @@ const BookingSchema = new Schema(
     },
     discount: {
       type: String,
-      required: true,
+      required: [true, "Please add a discount"],
     },
   },
   { timestamps: true }
