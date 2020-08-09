@@ -18,6 +18,10 @@ const DriverSchema = new Schema(
       type: String,
       required: [true, "Please add contact number"],
     },
+    birthday: {
+      type: Date,
+      required: true,
+    },
     address: {
       type: String,
       required: [true, "Please add address"],
