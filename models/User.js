@@ -9,6 +9,8 @@ const UserSchema = new Schema(
     email: {
       type: String,
       required: [true, "Please add a email"],
+      unique: true,
+      match: [/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, "Please add a valid mail"],
     },
     contact: {
       type: String,
