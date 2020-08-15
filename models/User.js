@@ -28,6 +28,8 @@ const UserSchema = new Schema(
     password: {
       type: String,
       required: [true, "Please add password"],
+      minlength: 6,
+      select: false,
     },
   },
   { timestamps: true }
