@@ -9,6 +9,8 @@ const DriverSchema = new Schema(
     email: {
       type: String,
       required: [true, "Please add email"],
+      unique: true,
+      match: [/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, "Please add a valid mail"],
     },
     bgroup: {
       type: String,
