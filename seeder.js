@@ -11,3 +11,6 @@ const Driver = require("./models/Driver");
 const Booking = require("./models/Booking");
 const Package = require("./models/Package");
 const Vehicle = require("./models/Vehicle");
+
+// Connect to DB
+mongoose.connect();
