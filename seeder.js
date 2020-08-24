@@ -13,4 +13,8 @@ const Package = require("./models/Package");
 const Vehicle = require("./models/Vehicle");
 
 // Connect to DB
-mongoose.connect();
+mongoose.connect(process.env.APP_DB, {
+  useFindAndModify: true,
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+});
