@@ -18,3 +18,8 @@ mongoose.connect(process.env.APP_DB, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
+
+//Read JSON files
+const users = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data/users.json`, "utf-8")
+);
