@@ -23,3 +23,13 @@ mongoose.connect(process.env.APP_DB, {
 const users = JSON.parse(
   fs.readFileSync(`${__dirname}/_data/users.json`, "utf-8")
 );
+
+// Import into DB
+const importData = async () => {
+  try {
+    await User.create(users);
+    console.log("Data imported...", green.inverse);
+  } catch (err) {
+    console.log(err);
+  }
+};
