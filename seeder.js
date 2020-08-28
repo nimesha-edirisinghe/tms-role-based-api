@@ -29,6 +29,18 @@ const importData = async () => {
   try {
     await User.create(users);
     console.log("Data imported...", green.inverse);
+    process.exit();
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+// Delete data
+const deleteData = async () => {
+  try {
+    await User.deleteMany();
+    console.log("Data Destroyed...", red.inverse);
+    process.exit();
   } catch (err) {
     console.log(err);
   }
