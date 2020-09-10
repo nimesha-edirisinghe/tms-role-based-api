@@ -4,15 +4,15 @@ const BookingSchema = new Schema(
   {
     name: {
       type: String,
-      required: [true, "Please add name"],
+      required: [true, "Please add a name"],
     },
     type: {
       type: String,
-      required: [true, "Please add booking type"],
+      required: [true, "Please add a booking type"],
     },
     description: {
       type: String,
-      required: [true, "Please add description"],
+      required: [true, "Please add a description"],
     },
     guests: {
       type: Number,
