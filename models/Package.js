@@ -4,19 +4,19 @@ const PackageSchema = new Schema(
   {
     name: {
       type: String,
-      required: [true, "Please add name"],
+      required: [true, "Please add a name"],
     },
     type: {
       type: String,
-      required: [true, "Please add packaged type"],
+      required: [true, "Please add a package type"],
     },
     amount: {
       type: Number,
-      required: true,
+      required: [true, "Please add a amount"],
     },
     description: {
       type: String,
-      required: true,
+      required: [true, "Please add a description"],
     },
   },
   { timestamps: true }
